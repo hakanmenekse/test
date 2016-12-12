@@ -13,6 +13,7 @@ namespace WebApplication1
         {
             // hakan 1
             //frtbs
+            //deneme yorumu
         }
 
         protected void LinqServerModeDataSource1_Selecting(object sender, DevExpress.Data.Linq.LinqServerModeDataSourceSelectEventArgs e)
