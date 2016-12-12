@@ -24,3 +24,11 @@ C:\Users\hakan\OneDrive\Belgeler\Visual Studio 2015\Projects\GitHubTest\TTS.Data
 C:\Users\hakan\OneDrive\Belgeler\Visual Studio 2015\Projects\GitHubTest\TTS.Data\obj\Debug\TTS.Data.csprojResolveAssemblyReference.cache
 C:\Users\hakan\OneDrive\Belgeler\Visual Studio 2015\Projects\GitHubTest\TTS.Data\obj\Debug\TTS.Data.dll
 C:\Users\hakan\OneDrive\Belgeler\Visual Studio 2015\Projects\GitHubTest\TTS.Data\obj\Debug\TTS.Data.pdb
+C:\innotek\github\test\GitHubTest\TTS.Data\bin\Debug\TTS.Data.dll.config
+C:\innotek\github\test\GitHubTest\TTS.Data\bin\Debug\TTS.Data.dll
+C:\innotek\github\test\GitHubTest\TTS.Data\bin\Debug\TTS.Data.pdb
+C:\innotek\github\test\GitHubTest\TTS.Data\bin\Debug\System.Net.Http.dll
+C:\innotek\github\test\GitHubTest\TTS.Data\bin\Debug\System.Net.Http.xml
+C:\innotek\github\test\GitHubTest\TTS.Data\obj\Debug\TTS.Data.csprojResolveAssemblyReference.cache
+C:\innotek\github\test\GitHubTest\TTS.Data\obj\Debug\TTS.Data.dll
+C:\innotek\github\test\GitHubTest\TTS.Data\obj\Debug\TTS.Data.pdb
