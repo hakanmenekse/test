@@ -11,12 +11,16 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // branch________________111111
         }
 
         protected void LinqServerModeDataSource1_Selecting(object sender, DevExpress.Data.Linq.LinqServerModeDataSourceSelectEventArgs e)
         {
+
+            // hakan_1 için branch testi
+
             //brach_1
+
         }
 
         protected void ASPxGridView1_CellEditorInitialize(object sender, DevExpress.Web.ASPxGridViewEditorEventArgs e)
@@ -25,6 +29,7 @@ namespace WebApplication1
             {
                 e.Editor.ReadOnly = true;
                 e.Editor.ClientEnabled = false;
+                //test_2
             }
 
         }
