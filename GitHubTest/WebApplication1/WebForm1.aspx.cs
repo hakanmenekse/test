@@ -16,7 +16,7 @@ namespace WebApplication1
 
         protected void LinqServerModeDataSource1_Selecting(object sender, DevExpress.Data.Linq.LinqServerModeDataSourceSelectEventArgs e)
         {
-            
+            // hakan_1 için branch testi
         }
 
         protected void ASPxGridView1_CellEditorInitialize(object sender, DevExpress.Web.ASPxGridViewEditorEventArgs e)
