@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TankTakip" Class="TTSDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=TankTakip;Integrated Security=True;Persist Security Info=False" SettingsObjectName="TTS.Data.Properties.Settings" SettingsPropertyName="TankTakipConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EvaporatorKapasiteleri" Member="EvaporatorKapasiteleris">
+    <Type Name="EvaporatorKapasiteleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="EvaporatorKapasiteleri_Evaporatorler" Member="Evaporatorlers" ThisKey="Id" OtherKey="KapasiteId" Type="Evaporatorler" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EvaporatorTipleri" Member="EvaporatorTipleris">
+    <Type Name="EvaporatorTipleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="EvaporatorTipleri_Evaporatorler" Member="Evaporatorlers" ThisKey="Id" OtherKey="TipId" Type="Evaporatorler" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VanaPozisyonlari" Member="VanaPozisyonlaris">
+    <Type Name="VanaPozisyonlari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="VanaPozisyonlari_KriyojenikVanalar" Member="KriyojenikVanalars" ThisKey="Id" OtherKey="PosizyonId" Type="KriyojenikVanalar" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GazCinsi" Member="GazCinsis">
+    <Type Name="GazCinsi">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OzelGaz" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OlcuBirimiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GazCinsi_MikserGazlari" Member="MikserGazlaris" ThisKey="Id" OtherKey="GazId" Type="MikserGazlari" />
+      <Association Name="GazCinsi_TankMikserleri" Member="TankMikserleris" ThisKey="Id" OtherKey="Gaz1Id" Type="TankMikserleri" />
+      <Association Name="GazCinsi_TankMikserleri1" Member="TankMikserleris1" ThisKey="Id" OtherKey="Gaz2Id" Type="TankMikserleri" />
+      <Association Name="GazCinsi_TankMikserleri2" Member="TankMikserleris2" ThisKey="Id" OtherKey="Gaz3Id" Type="TankMikserleri" />
+      <Association Name="GazCinsi_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="GazCinsiId" Type="Tanklar" />
+      <Association Name="GazCinsi_Evaporatorler" Member="Evaporatorlers" ThisKey="Id" OtherKey="GazCinsiId" Type="Evaporatorler" />
+      <Association Name="OlcuBirimi_GazCinsi" Member="OlcuBirimi" ThisKey="OlcuBirimiId" OtherKey="Id" Type="OlcuBirimi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Imalatcilar" Member="Imalatcilars">
+    <Type Name="Imalatcilar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Imalatcilar_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="ImalatciId" Type="Tanklar" />
+      <Association Name="Imalatcilar_Evaporatorler" Member="Evaporatorlers" ThisKey="Id" OtherKey="ImalatciId" Type="Evaporatorler" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KriyojenikVanalar" Member="KriyojenikVanalars">
+    <Type Name="KriyojenikVanalar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Cap" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PosizyonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="VanaPozisyonlari_KriyojenikVanalar" Member="VanaPozisyonlari" ThisKey="PosizyonId" OtherKey="Id" Type="VanaPozisyonlari" IsForeignKey="true" />
+      <Association Name="Markalar_KriyojenikVanalar" Member="Markalar" ThisKey="MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Markalar" Member="Markalars">
+    <Type Name="Markalar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarkaAdı" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Markalar_KriyojenikVanalar" Member="KriyojenikVanalars" ThisKey="Id" OtherKey="MarkaId" Type="KriyojenikVanalar" />
+      <Association Name="Markalar_Pompalar" Member="Pompalars" ThisKey="Id" OtherKey="MarkaId" Type="Pompalar" />
+      <Association Name="Markalar_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="SafetyRelief1MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar1" Member="Tanklars1" ThisKey="Id" OtherKey="SafetyRelief2MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar2" Member="Tanklars2" ThisKey="Id" OtherKey="EkonomayzerMarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar3" Member="Tanklars3" ThisKey="Id" OtherKey="VakumVanaMarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar4" Member="Tanklars4" ThisKey="Id" OtherKey="BasinGostergeMarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar5" Member="Tanklars5" ThisKey="Id" OtherKey="SeviyeGostergeMarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar6" Member="Tanklars6" ThisKey="Id" OtherKey="SeviyeGostergeManifoldMarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar7" Member="Tanklars7" ThisKey="Id" OtherKey="SafetyRelief3MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar8" Member="Tanklars8" ThisKey="Id" OtherKey="SafetyRelief4MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar9" Member="Tanklars9" ThisKey="Id" OtherKey="PatlamaDiski1MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar10" Member="Tanklars10" ThisKey="Id" OtherKey="PatlamaDiski2MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar11" Member="Tanklars11" ThisKey="Id" OtherKey="Regulator1MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar12" Member="Tanklars12" ThisKey="Id" OtherKey="Regulator2MarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar13" Member="Tanklars13" ThisKey="Id" OtherKey="Reg_ECNMMarkaId" Type="Tanklar" />
+      <Association Name="Markalar_Tanklar14" Member="Tanklars14" ThisKey="Id" OtherKey="EkonomayzerMarkaId" Type="Tanklar" />
+      <Association Name="MarkaTipi_Markalar" Member="MarkaTipi" ThisKey="TipId" OtherKey="Id" Type="MarkaTipi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MarkaTipi" Member="MarkaTipis">
+    <Type Name="MarkaTipi">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="MarkaTipi_Markalar" Member="Markalars" ThisKey="Id" OtherKey="TipId" Type="Markalar" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MikserGazlari" Member="MikserGazlaris">
+    <Type Name="MikserGazlari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MikserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GazId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GazCinsi_MikserGazlari" Member="GazCinsi" ThisKey="GazId" OtherKey="Id" Type="GazCinsi" IsForeignKey="true" />
+      <Association Name="Mikserler_MikserGazlari" Member="Mikserler" ThisKey="MikserId" OtherKey="Id" Type="Mikserler" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mikserler" Member="Mikserlers">
+    <Type Name="Mikserler">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatYili" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GazAdedi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KarisimOranlari" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Yazicili" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Analizor2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor2Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Mikserler_MikserGazlari" Member="MikserGazlaris" ThisKey="Id" OtherKey="MikserId" Type="MikserGazlari" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Musteriler" Member="Musterilers">
+    <Type Name="Musteriler">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PostaKodu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Il" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MusteriFaturaAlicisi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VergiDairesi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VergiNo" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Telefon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="İlgiliKisi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AramaDizini" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Satici" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Musteriler_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="MusteriId" Type="Tanklar" />
+      <Association Name="Musteriler_Evaporatorler" Member="Evaporatorlers" ThisKey="Id" OtherKey="MusteriId" Type="Evaporatorler" />
+      <Association Name="Musteriler_StokHareketleri" Member="StokHareketleris" ThisKey="Id" OtherKey="MusteriId" Type="StokHareketleri" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MusteriTahsisNitelikleri" Member="MusteriTahsisNitelikleris">
+    <Type Name="MusteriTahsisNitelikleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="MusteriTahsisNitelikleri_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="MusteriTahsisNitelikId" Type="Tanklar" />
+      <Association Name="MusteriTahsisNitelikleri_Evaporatorler" Member="Evaporatorlers" ThisKey="Id" OtherKey="TahsisNitelikId" Type="Evaporatorler" />
+      <Association Name="MusteriTahsisNitelikleri_StokHareketleri" Member="StokHareketleris" ThisKey="Id" OtherKey="TahsisNitelikId" Type="StokHareketleri" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OlcuBirimi" Member="OlcuBirimis">
+    <Type Name="OlcuBirimi">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="OlcuBirimi_GazCinsi" Member="GazCinsis" ThisKey="Id" OtherKey="OlcuBirimiId" Type="GazCinsi" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pompalar" Member="Pompalars">
+    <Type Name="Pompalar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Basinc" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="Markalar_Pompalar" Member="Markalar" ThisKey="MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="PompaTipleri_Pompalar" Member="PompaTipleri" ThisKey="TipId" OtherKey="Id" Type="PompaTipleri" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PompaTipleri" Member="PompaTipleris">
+    <Type Name="PompaTipleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="PompaTipleri_Pompalar" Member="Pompalars" ThisKey="Id" OtherKey="TipId" Type="Pompalar" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SeviyeGostergeleri" Member="SeviyeGostergeleris">
+    <Type Name="SeviyeGostergeleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Deger" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subeler" Member="Subelers">
+    <Type Name="Subeler">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="Subeler_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="SubeId" Type="Tanklar" />
+      <Association Name="Subeler_StokHareketleri" Member="StokHareketleris" ThisKey="Id" OtherKey="SubeId" Type="StokHareketleri" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TankHacimleri" Member="TankHacimleris">
+    <Type Name="TankHacimleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Miktar" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Birim" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="TankHacimleri_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="HacimId" Type="Tanklar" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Telemetreler" Member="Telemetrelers">
+    <Type Name="Telemetreler">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Telemetreler_Tanklar" Member="Tanklars" ThisKey="Id" OtherKey="TelemetreId" Type="Tanklar" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Gazlar" Member="V_Gazlars">
+    <Type Name="V_Gazlar">
+      <Column Name="Kod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OzelGaz" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GazTanim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Pompalar" Member="V_Pompalars">
+    <Type Name="V_Pompalar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Basinc" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PompaTipi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MarkaAdı" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_KriyojenikVanalar" Member="V_KriyojenikVanalars">
+    <Type Name="V_KriyojenikVanalar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Cap" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MarkaAdı" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Pozisyon" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Markalar" Member="V_Markalars">
+    <Type Name="V_Markalar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarkaAdı" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Mikserler" Member="V_Mikserlers">
+    <Type Name="V_Mikserler">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatYili" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GazAdedi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KarisimOranlari" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Yazicili" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Analizor2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor2Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GazCinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Birim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_TankPompalari" Member="V_TankPompalaris">
+    <Type Name="V_TankPompalari">
+      <Column Name="TankId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Basinc" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PompaTipi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_TankMikserleri" Member="V_TankMikserleris">
+    <Type Name="V_TankMikserleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatYili" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GazAdedi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Yazicili" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Analizor2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor2Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KarisimOranlari" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TankId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_TankKriyojenikVanalari" Member="V_TankKriyojenikVanalaris">
+    <Type Name="V_TankKriyojenikVanalari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Cap" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MarkaAdı" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TankId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TankPompalari" Member="TankPompalaris">
+    <Type Name="TankPompalari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TankId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Basinc" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="Tanklar_TankPompalari" Member="Tanklar" ThisKey="TankId" OtherKey="Id" Type="Tanklar" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TankKriyojenikVanalari" Member="TankKriyojenikVanalaris">
+    <Type Name="TankKriyojenikVanalari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TankId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Cap" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PosizyonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tanklar_TankKriyojenikVanalari" Member="Tanklar" ThisKey="TankId" OtherKey="Id" Type="Tanklar" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TankMikserleri" Member="TankMikserleris">
+    <Type Name="TankMikserleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TankId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatYili" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Kapasite" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GazAdedi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KarisimOranlari" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Yazicili" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor1Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Analizor2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Analizor2Cinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Gaz1Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gaz2Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gaz3Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GazCinsi_TankMikserleri" Member="GazCinsi" ThisKey="Gaz1Id" OtherKey="Id" Type="GazCinsi" IsForeignKey="true" />
+      <Association Name="GazCinsi_TankMikserleri1" Member="GazCinsi1" ThisKey="Gaz2Id" OtherKey="Id" Type="GazCinsi" IsForeignKey="true" />
+      <Association Name="GazCinsi_TankMikserleri2" Member="GazCinsi2" ThisKey="Gaz3Id" OtherKey="Id" Type="GazCinsi" IsForeignKey="true" />
+      <Association Name="Tanklar_TankMikserleri" Member="Tanklar" ThisKey="TankId" OtherKey="Id" Type="Tanklar" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SistemKullanici" Member="SistemKullanicis">
+    <Type Name="SistemKullanici">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kod" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sifre" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Soyad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EtiketNoSayac" Member="EtiketNoSayacs">
+    <Type Name="EtiketNoSayac">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SonEtiketNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tanklar" Member="Tanklars">
+    <Type Name="Tanklar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EtiketNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TankKonumu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BulunduguYer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HabasSeriNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatciSeriNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatciId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImalatTarihi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SonTestTarihi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GelecekTestTarihi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PeriyodikKontrolTarihleri" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="HacimId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DisCapi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DisToplamBoyu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsletmeBasinci" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DizaynBasinci" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TestBasinci" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DolumCenesi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DolumCenesiKorTopa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="VakumDegeri" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SafetyRelief1MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafetyRelief2MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafetyRelief3MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafetyRelief4MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PatlamaDiski1MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PatlamaDiski2MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Regulator1MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Regulator2MarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Reg_ECNMMarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EkonomayzerMarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IzolasyonTipi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IlaveIzolasyon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HidrostatikTestTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="UcuncuPartyKontrolDosyaTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CEBelgeTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PiBelgeTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DKPlakaNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DKImalatTarihi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DKRuhsatTarihi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DKDingilSayisi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DKMarkasi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TankDKBosAgirlik" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="T9BelgeTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SAPSiparisNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TankBoyasiDuzgunmu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="VakumVanaMarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VakumVanaDurumu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BasinGostergeMarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BasincGostergeKuturu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BasinGostergeMaksimumDegeri" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SeviyeGostergeFarkBaisncDegeri" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SeviyeGostergeMarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SeviyeGostergeManifoldMarkaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TelemetreId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MusteriTahsisNitelikId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GazCinsiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SertifikasyonBilgisi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SertifikasyonBelgeTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AyakAdedi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AyakAnkrajDizanyni" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MusteriId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Posizyon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TankTipi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AracTakipTankNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KayitTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tanklar_TankPompalari" Member="TankPompalaris" ThisKey="Id" OtherKey="TankId" Type="TankPompalari" />
+      <Association Name="Tanklar_TankKriyojenikVanalari" Member="TankKriyojenikVanalaris" ThisKey="Id" OtherKey="TankId" Type="TankKriyojenikVanalari" />
+      <Association Name="Tanklar_TankMikserleri" Member="TankMikserleris" ThisKey="Id" OtherKey="TankId" Type="TankMikserleri" />
+      <Association Name="Tanklar_Tanklar" Member="Tanklar2" ThisKey="Id" OtherKey="Id" Type="Tanklar" Cardinality="One" />
+      <Association Name="Tanklar_Tanklar1" Member="Tanklar4" ThisKey="Id" OtherKey="Id" Type="Tanklar" Cardinality="One" />
+      <Association Name="Tanklar_Tanklar" Member="Tanklar1" ThisKey="Id" OtherKey="Id" Type="Tanklar" IsForeignKey="true" />
+      <Association Name="GazCinsi_Tanklar" Member="GazCinsi" ThisKey="GazCinsiId" OtherKey="Id" Type="GazCinsi" IsForeignKey="true" />
+      <Association Name="Imalatcilar_Tanklar" Member="Imalatcilar" ThisKey="ImalatciId" OtherKey="Id" Type="Imalatcilar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar" Member="Markalar" ThisKey="SafetyRelief1MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar1" Member="Markalar1" ThisKey="SafetyRelief2MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar2" Member="Markalar2" ThisKey="EkonomayzerMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar3" Member="Markalar3" ThisKey="VakumVanaMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar4" Member="Markalar4" ThisKey="BasinGostergeMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar5" Member="Markalar5" ThisKey="SeviyeGostergeMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar6" Member="Markalar6" ThisKey="SeviyeGostergeManifoldMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar7" Member="Markalar7" ThisKey="SafetyRelief3MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar8" Member="Markalar8" ThisKey="SafetyRelief4MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar9" Member="Markalar9" ThisKey="PatlamaDiski1MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar10" Member="Markalar10" ThisKey="PatlamaDiski2MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar11" Member="Markalar11" ThisKey="Regulator1MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar12" Member="Markalar12" ThisKey="Regulator2MarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar13" Member="Markalar13" ThisKey="Reg_ECNMMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Markalar_Tanklar14" Member="Markalar14" ThisKey="EkonomayzerMarkaId" OtherKey="Id" Type="Markalar" IsForeignKey="true" />
+      <Association Name="Musteriler_Tanklar" Member="Musteriler" ThisKey="MusteriId" OtherKey="Id" Type="Musteriler" IsForeignKey="true" />
+      <Association Name="MusteriTahsisNitelikleri_Tanklar" Member="MusteriTahsisNitelikleri" ThisKey="MusteriTahsisNitelikId" OtherKey="Id" Type="MusteriTahsisNitelikleri" IsForeignKey="true" />
+      <Association Name="Subeler_Tanklar" Member="Subeler" ThisKey="SubeId" OtherKey="Id" Type="Subeler" IsForeignKey="true" />
+      <Association Name="TankHacimleri_Tanklar" Member="TankHacimleri" ThisKey="HacimId" OtherKey="Id" Type="TankHacimleri" IsForeignKey="true" />
+      <Association Name="Tanklar_Tanklar1" Member="Tanklar3" ThisKey="Id" OtherKey="Id" Type="Tanklar" IsForeignKey="true" />
+      <Association Name="Telemetreler_Tanklar" Member="Telemetreler" ThisKey="TelemetreId" OtherKey="Id" Type="Telemetreler" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Evaporatorler" Member="Evaporatorlers">
+    <Type Name="Evaporatorler">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EtiketNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TipId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HabasSeriNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatciSeriNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ImalatciId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImalatTarihi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="KapasiteId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PetekSayisi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PetekBoyu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ToplamPetekBoyu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SuluEvaporatorTipi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BoruCinsi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BoruCapi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KollektorGirisFlansOlcusu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KollektorCikisFlansOlcusu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsletmeBasinci" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DizaynBasinci" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TestBasinci" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="UcuncuPartiKontrolBilgileri" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CEBelgesi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IcSiparisNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TahsisNitelikId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MusteriId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GazCinsiId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SiviKullaniminaUygunTemizlik" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SertifikasyonBilgisi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TestKontrolTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Periyodik" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KayitTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="EvaporatorKapasiteleri_Evaporatorler" Member="EvaporatorKapasiteleri" ThisKey="KapasiteId" OtherKey="Id" Type="EvaporatorKapasiteleri" IsForeignKey="true" />
+      <Association Name="EvaporatorTipleri_Evaporatorler" Member="EvaporatorTipleri" ThisKey="TipId" OtherKey="Id" Type="EvaporatorTipleri" IsForeignKey="true" />
+      <Association Name="GazCinsi_Evaporatorler" Member="GazCinsi" ThisKey="GazCinsiId" OtherKey="Id" Type="GazCinsi" IsForeignKey="true" />
+      <Association Name="Imalatcilar_Evaporatorler" Member="Imalatcilar" ThisKey="ImalatciId" OtherKey="Id" Type="Imalatcilar" IsForeignKey="true" />
+      <Association Name="Musteriler_Evaporatorler" Member="Musteriler" ThisKey="MusteriId" OtherKey="Id" Type="Musteriler" IsForeignKey="true" />
+      <Association Name="MusteriTahsisNitelikleri_Evaporatorler" Member="MusteriTahsisNitelikleri" ThisKey="TahsisNitelikId" OtherKey="Id" Type="MusteriTahsisNitelikleri" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StokHareketleri" Member="StokHareketleris">
+    <Type Name="StokHareketleri">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EkipmanId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MusteriId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IrsaliyeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TahsisNitelikId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Durum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Aciklama" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Association Name="Musteriler_StokHareketleri" Member="Musteriler" ThisKey="MusteriId" OtherKey="Id" Type="Musteriler" IsForeignKey="true" />
+      <Association Name="MusteriTahsisNitelikleri_StokHareketleri" Member="MusteriTahsisNitelikleri" ThisKey="TahsisNitelikId" OtherKey="Id" Type="MusteriTahsisNitelikleri" IsForeignKey="true" />
+      <Association Name="Subeler_StokHareketleri" Member="Subeler" ThisKey="SubeId" OtherKey="Id" Type="Subeler" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_StokRapor" Member="V_StokRapors">
+    <Type Name="V_StokRapor">
+      <Column Name="SubeKodu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TahsisNitelik" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MusteriKod" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="İmalatciTanim" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EtiketNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImalatTarihi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="KayitTarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Tarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IrsaliyeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Durum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HabasSeriNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Aciklama" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

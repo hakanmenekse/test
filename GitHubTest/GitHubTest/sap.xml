@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ZCC_SD_ORDERAPPROVE_LIST>
+  <import>
+    <I_ANLZ>X</I_ANLZ>
+    <I_CMGST>B</I_CMGST>
+    <I_KKBER>CCTK</I_KKBER>
+    <I_VBELN>0000611621</I_VBELN>
+  </import>
+  <tables>
+    <ET_001>
+      <row id="0">
+        <ONAYSIPARIS>0000611621</ONAYSIPARIS>
+        <ONAYKULLANICI>OBUYUKKIDIK</ONAYKULLANICI>
+        <ONAYMAIL>omer.buyukkidik@cci.com.tr</ONAYMAIL>
+        <FLG></FLG>
+        <ICON>@09@</ICON>
+        <VBELN>0000611621</VBELN>
+        <VKBUR>TR13</VKBUR>
+        <BEZEI>Istanbul Cold Drnk.</BEZEI>
+        <KUNNR>ZATR120</KUNNR>
+        <NAME1>GOKHAN BUYRUK</NAME1>
+        <KNKLI>0000642684</KNKLI>
+        <KNAME>KAZAN ISKENDER (VIAPORT)</KNAME>
+        <VKORG>TR20</VKORG>
+        <VTWEG>10</VTWEG>
+        <SPART>10</SPART>
+        <ZTERM>C021</ZTERM>
+        <ZTERM_TXT>21 Gün</ZTERM_TXT>
+        <KLIMK>3000.00</KLIMK>
+        <IPOTEK>0.00</IPOTEK>
+        <REHIN>0.00</REHIN>
+        <KOPS>0.00</KOPS>
+        <TMEKTUP>0.00</TMEKTUP>
+        <TTEMINAT>0.00</TTEMINAT>
+        <KULLANILAN_TUT>0.00</KULLANILAN_TUT>
+        <KLNTEMINAT>0.00</KLNTEMINAT>
+        <SKFOR>13637.79</SKFOR>
+        <SSOBL>0.00</SSOBL>
+        <FIBAKIYE>13637.79</FIBAKIYE>
+        <RISK>-13637.79</RISK>
+        <SCM_EKLIMIT>3000.00</SCM_EKLIMIT>
+        <SCM_LMTORAN>0.00</SCM_LMTORAN>
+        <OEIKW>0.00</OEIKW>
+        <OLIKW>0.00</OLIKW>
+        <OFAKW>0.00</OFAKW>
+        <OBLIG>13637.79</OBLIG>
+        <BAKIYE_KREDI>0.00</BAKIYE_KREDI>
+        <WAERS>TRY</WAERS>
+        <TSLMT_TUTAR>259.60</TSLMT_TUTAR>
+        <LAO>463.25</LAO>
+        <ZAHLS>M</ZAHLS>
+        <TOPLAM_BORC>13637.79</TOPLAM_BORC>
+        <VGB>13637.79</VGB>
+        <VADEGUN1>0.00</VADEGUN1>
+        <VADEGUN2>0.00</VADEGUN2>
+        <VADEGUN3>0.00</VADEGUN3>
+        <VADEGUN4>0.00</VADEGUN4>
+        <VADEGUN5>13637.79</VADEGUN5>
+        <ACIK_CEKLER>0.00</ACIK_CEKLER>
+        <KAI>ZKTR99999</KAI>
+        <KAINAME>KAR MERKEZI ICIN</KAINAME>
+        <CTLPC></CTLPC>
+        <SBGRP></SBGRP>
+        <CMGST>B</CMGST>
+        <CMPSA></CMPSA>
+        <CMPS0>B</CMPS0>
+        <CMPS1></CMPS1>
+        <CMPS2></CMPS2>
+        <PKUNN>0000642684</PKUNN>
+        <HITYP>F</HITYP>
+        <HITYP_TXT>Saha Hiyerarşisi</HITYP_TXT>
+        <HKUNNR_00>ZPTR01F4</HKUNNR_00>
+        <HKUNNR_00_TXT>EMRE UNAL</HKUNNR_00_TXT>
+        <HKUNNR_01>ZSTRJJ</HKUNNR_01>
+        <HKUNNR_01_TXT>NAZLI ERTUGRUL</HKUNNR_01_TXT>
+        <HKUNNR_02>ZATR120</HKUNNR_02>
+        <HKUNNR_02_TXT>GOKHAN BUYRUK</HKUNNR_02_TXT>
+        <HKUNNR_03>ZTTR13</HKUNNR_03>
+        <HKUNNR_03_TXT>IST COLD DRINK CHANNEL SC</HKUNNR_03_TXT>
+      </row>
+    </ET_001>
+    <ET_002>
+      <row id="0">
+        <ONAYSIPARIS>0000611621</ONAYSIPARIS>
+        <ONAYADIMI>1</ONAYADIMI>
+        <ONAYKULLANICI>OBUYUKKIDIK</ONAYKULLANICI>
+        <ONAYMAIL>omer.buyukkidik@cci.com.tr</ONAYMAIL>
+        <KUNNR>ZSTRJJ</KUNNR>
+      </row>
+      <row id="1">
+        <ONAYSIPARIS>0000611621</ONAYSIPARIS>
+        <ONAYADIMI>2</ONAYADIMI>
+        <ONAYKULLANICI>GBUYRUK</ONAYKULLANICI>
+        <ONAYMAIL></ONAYMAIL>
+        <KUNNR>ZATR120</KUNNR>
+      </row>
+      <row id="2">
+        <ONAYSIPARIS>0000611621</ONAYSIPARIS>
+        <ONAYADIMI>3</ONAYADIMI>
+        <ONAYKULLANICI>OBUYUKKIDIK</ONAYKULLANICI>
+        <ONAYMAIL>omer.buyukkidik@cci.com.tr</ONAYMAIL>
+        <KUNNR>ZTTR13</KUNNR>
+      </row>
+      <row id="3">
+        <ONAYSIPARIS>0000611621</ONAYSIPARIS>
+        <ONAYADIMI>4</ONAYADIMI>
+        <ONAYKULLANICI>AOZKARA</ONAYKULLANICI>
+        <ONAYMAIL>omerbuyukkidik@cci.com.tr</ONAYMAIL>
+        <KUNNR>ZXTR10</KUNNR>
+      </row>
+      <row id="4">
+        <ONAYSIPARIS>0000611621</ONAYSIPARIS>
+        <ONAYADIMI>5</ONAYADIMI>
+        <ONAYKULLANICI></ONAYKULLANICI>
+        <ONAYMAIL></ONAYMAIL>
+        <KUNNR>ZATR120</KUNNR>
+      </row>
+    </ET_002>
+    <ET_003>
+      <row id="0">
+        <ONAYTESLIMAT>0000611621</ONAYTESLIMAT>
+        <BILGIKULLANICI>OBUYUKKIDIK</BILGIKULLANICI>
+        <BILGIMAIL>omer.buyukkidik@cci.com.tr</BILGIMAIL>
+      </row>
+      <row id="1">
+        <ONAYTESLIMAT>0000611621</ONAYTESLIMAT>
+        <BILGIKULLANICI>EUNAL</BILGIKULLANICI>
+        <BILGIMAIL></BILGIMAIL>
+      </row>
+    </ET_003>
+    <IT_KUNNR/>
+    <IT_VBELN/>
+  </tables>
+</ZCC_SD_ORDERAPPROVE_LIST>

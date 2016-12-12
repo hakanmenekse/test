@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.5, 32.125" name="TTSDataClasses">
+  <DataContextMoniker Name="/TTSDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="64995e96-1b50-4003-962e-f51640e0f96d" absoluteBounds="3.75, 2, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/EvaporatorKapasiteleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65391688-ace6-4533-9a29-e8417459be7a" absoluteBounds="3.765, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fbca12c-cbbd-4792-ae1e-248606e3b7f7" absoluteBounds="5, 6.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/EvaporatorTipleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="795dadc1-ef2b-4cd6-8380-b6245f9ddf76" absoluteBounds="5.015, 6.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0c5b7ce-a81a-451e-bb2c-85ae244c6819" absoluteBounds="7.75, 30.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/VanaPozisyonlari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9165164e-ab54-4e2b-be67-ffa58176c43e" absoluteBounds="7.765, 30.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f690010c-2b37-4360-9545-50faa844a570" absoluteBounds="7.75, 24, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/GazCinsi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a352323-8b69-4bba-9c26-de21048572f9" absoluteBounds="7.765, 24.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a1283e6-5023-4dc6-8d74-0d73580e9c4f" absoluteBounds="4.5, 4.125, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Imalatcilar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52cfc9c4-926b-4228-bc71-add4778c6f8e" absoluteBounds="4.5150000000000006, 4.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a819751d-9324-4db7-835a-e5c9c46c5b89" absoluteBounds="10.5, 30.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/KriyojenikVanalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc310365-4bdc-44a9-92b1-34cd4653f926" absoluteBounds="10.515, 30.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56c33bd3-d708-4159-9863-a77eecbbc50d" absoluteBounds="7.75, 20.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Markalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d2436f0-f157-4c7b-9081-7f2f625849b9" absoluteBounds="7.765, 20.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3b95011-20b2-4672-a999-7e8fb375971d" absoluteBounds="5, 20.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/MarkaTipi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64b5141a-a4f8-4f2e-94cc-4724607ab7e6" absoluteBounds="5.015, 20.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="baa88b3f-0325-4377-ab86-e67307f72f1e" absoluteBounds="10.25, 17.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/MikserGazlari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d02345b-89be-45fe-8d22-4254cef67b0a" absoluteBounds="10.265, 17.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e2fee01-954a-412a-aa10-06be6f9fa7f0" absoluteBounds="7.75, 16.125, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Mikserler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9104dc2f-1553-4a0c-b3cd-e373f9548ff2" absoluteBounds="7.765, 16.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="863bb5be-f74b-4dc1-ae6c-36435e10a6b6" absoluteBounds="5, 12, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Musteriler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca2b00ae-f307-46fc-9f9c-4fdf084fd081" absoluteBounds="5.015, 12.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2bf32d83-6656-4ff7-8f88-28234b544d75" absoluteBounds="5, 10.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/MusteriTahsisNitelikleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba1e4716-5704-4b63-8e24-4b6b001a5aa8" absoluteBounds="5.015, 10.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="210b41b4-411c-4761-bcc8-442f7b2c0c53" absoluteBounds="5, 24.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/OlcuBirimi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a300c287-3eee-4b23-9eb2-63f5f5079ab9" absoluteBounds="5.015, 24.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d0ca461-1aac-4e6b-ad2e-14a2d1c8a3c1" absoluteBounds="7.75, 26.5, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Pompalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="384ceb6d-0a8c-4978-86a3-c993340836d4" absoluteBounds="7.765, 26.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48457102-06ae-4070-93b0-6d0175e9967c" absoluteBounds="5, 26.875, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/PompaTipleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dde7fc92-360f-40b8-813b-1c790874ce67" absoluteBounds="5.015, 27.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db0617e0-430b-42f1-8a13-fab828105c28" absoluteBounds="0.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/SeviyeGostergeleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a66dbb55-30ed-46c5-9853-9c1ab4652b4d" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f85b8572-f235-4ce3-99a0-b9090581d9e8" absoluteBounds="7.75, 13.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Subeler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dddc0f4e-975f-41df-b3e3-935e36cc032c" absoluteBounds="7.765, 14.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3c56370-8eb9-4d5b-92e1-6acb28c18c66" absoluteBounds="7.75, 11.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/TankHacimleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="152948b2-10d3-414b-8b00-05ae4e59d120" absoluteBounds="7.765, 11.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d02e347b-eadb-4ea3-89e8-cd0445181afb" absoluteBounds="7.75, 9.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Telemetreler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e87af14a-e56b-41b6-b10a-ba3b6cdba5b8" absoluteBounds="7.765, 9.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.75 : 30.9719962565104); (10.5 : 30.9719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/VanaPozisyonlari/VanaPozisyonlari_KriyojenikVanalar" />
+      <nodes>
+        <classShapeMoniker Id="d0c5b7ce-a81a-451e-bb2c-85ae244c6819" />
+        <classShapeMoniker Id="a819751d-9324-4db7-835a-e5c9c46c5b89" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 21.0681469726563); (9.96158916666667 : 21.0681469726563 : JumpStart); (10.1282558333333 : 21.0681469726563 : JumpEnd); (10.7916666666667 : 21.0681469726563 : JumpStart); (10.9583333333333 : 21.0681469726563 : JumpEnd); (11.5 : 21.0681469726563); (11.5 : 30.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_KriyojenikVanalar" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="a819751d-9324-4db7-835a-e5c9c46c5b89" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 21.0969962565104); (7.75 : 21.0969962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/MarkaTipi/MarkaTipi_Markalar" />
+      <nodes>
+        <classShapeMoniker Id="c3b95011-20b2-4672-a999-7e8fb375971d" />
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 24.8854484049479); (10.875 : 24.8854484049479); (10.875 : 18.5112939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/GazCinsi/GazCinsi_MikserGazlari" />
+      <nodes>
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+        <classShapeMoniker Id="baa88b3f-0325-4377-ab86-e67307f72f1e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 17.8181469726563); (9.88541666666667 : 17.8181469726563 : JumpStart); (10.2473983333333 : 17.8181469726563 : JumpEnd); (10.25 : 17.8181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Mikserler/Mikserler_MikserGazlari" />
+      <nodes>
+        <classShapeMoniker Id="4e2fee01-954a-412a-aa10-06be6f9fa7f0" />
+        <classShapeMoniker Id="baa88b3f-0325-4377-ab86-e67307f72f1e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 24.9142976888021); (7.75 : 24.9142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/OlcuBirimi/OlcuBirimi_GazCinsi" />
+      <nodes>
+        <classShapeMoniker Id="210b41b4-411c-4761-bcc8-442f7b2c0c53" />
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 21.7612939453125); (10.125 : 22.1362939453125); (10.125 : 26.0932867976262); (9.7182867976262 : 26.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Pompalar" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="5d0ca461-1aac-4e6b-ad2e-14a2d1c8a3c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 27.4719962565104); (7.75 : 27.4719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/PompaTipleri/PompaTipleri_Pompalar" />
+      <nodes>
+        <classShapeMoniker Id="48457102-06ae-4070-93b0-6d0175e9967c" />
+        <classShapeMoniker Id="5d0ca461-1aac-4e6b-ad2e-14a2d1c8a3c1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="67caf115-ee65-4140-b1c0-7df5e6ef5bd2" absoluteBounds="0.75, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_Gazlar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e22cff68-8a96-431d-ba91-d93318ff76fa" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8920aea-3421-4159-9397-ace91b0fe693" absoluteBounds="0.75, 9.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_Pompalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="498bd123-1d02-49d9-859b-9ebbec29f054" absoluteBounds="0.765, 10.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c8c684c-aefd-4624-8596-b2ed06d5732b" absoluteBounds="0.75, 12.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_KriyojenikVanalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ed5cb91-18ae-409c-bbb2-bd10b58102b3" absoluteBounds="0.765, 13.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b167bac6-78b1-4e74-b135-45bd79aff7d3" absoluteBounds="13.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_Markalar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1194582-5617-4cac-b4cd-45ee9e309e9e" absoluteBounds="13.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e2970f4c-311d-4cd5-9dd4-9497e0fa18fa" absoluteBounds="13.75, 3.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_Mikserler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2501a627-a72a-4c09-92be-b79fc552c3ba" absoluteBounds="13.765, 4.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2f69c98-36a2-48fe-a754-c474f5dc65df" absoluteBounds="0.5, 2.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_TankPompalari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5de242d7-37fa-4fcd-a3f9-cca2c9359eb7" absoluteBounds="0.51499999999999968, 3.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7221f367-a8e2-4320-b96c-c807066bd9a5" absoluteBounds="2.875, 3.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_TankMikserleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bab1999c-3b3c-48de-8370-99bb3d8141e6" absoluteBounds="2.89, 3.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0573b626-9486-4225-9fd5-1979715e1240" absoluteBounds="3.5, 7.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_TankKriyojenikVanalari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f0f87ab-b54c-4d3d-b0af-9efba9af356d" absoluteBounds="3.515, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69ae81ed-58e8-461a-94cd-304f24d9cdf1" absoluteBounds="13.875, 22.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/TankPompalari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fab63a28-2f42-4e36-9bdd-cfa39aedb87c" absoluteBounds="13.89, 22.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4233b983-0e96-4c01-8091-5889e9cf6363" absoluteBounds="13, 19.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/TankKriyojenikVanalari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61f35b15-f087-4f41-93c5-8411d5c2c4dd" absoluteBounds="13.015, 19.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39929a05-4a43-4af5-8256-cd335a44f277" absoluteBounds="14.875, 14.625, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/TankMikserleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0479c362-a16a-425b-bbdc-a6a1a4e9eddd" absoluteBounds="14.89, 15.085, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.75 : 25.3594251074219); (10.0416666666667 : 25.3594251074219 : JumpStart); (10.2083333333333 : 25.3594251074219 : JumpEnd); (11.4166666666667 : 25.3594251074219 : JumpStart); (11.5833333333333 : 25.3594251074219 : JumpEnd); (12.5416666666667 : 25.3594251074219 : JumpStart); (12.7083333333333 : 25.3594251074219 : JumpEnd); (16.40625 : 25.3594251074219); (16.40625 : 18.5112125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/GazCinsi/GazCinsi_TankMikserleri" />
+      <nodes>
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+        <classShapeMoniker Id="39929a05-4a43-4af5-8256-cd335a44f277" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 24.6484600537109); (10.0416666666667 : 24.6484600537109 : JumpStart); (10.2083333333333 : 24.6484600537109 : JumpEnd); (10.7916666666667 : 24.6484600537109 : JumpStart); (10.9583333333333 : 24.6484600537109 : JumpEnd); (11.4166666666667 : 24.6484600537109 : JumpStart); (11.5833333333333 : 24.6484600537109 : JumpEnd); (12.5416666666667 : 24.6484600537109 : JumpStart); (12.7083333333333 : 24.6484600537109 : JumpEnd); (16.1406225 : 24.6484600537109); (16.1406225 : 18.5112125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/GazCinsi/GazCinsi_TankMikserleri1" />
+      <nodes>
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+        <classShapeMoniker Id="39929a05-4a43-4af5-8256-cd335a44f277" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 25.1224367561849); (11.4166666666667 : 25.1224367561849 : JumpStart); (11.5833333333333 : 25.1224367561849 : JumpEnd); (12.5416666666667 : 25.1224367561849 : JumpStart); (12.7083333333333 : 25.1224367561849 : JumpEnd); (16.6718775 : 25.1224367561849); (16.6718775 : 18.5112125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/GazCinsi/GazCinsi_TankMikserleri2" />
+      <nodes>
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+        <classShapeMoniker Id="39929a05-4a43-4af5-8256-cd335a44f277" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a29ffcd1-3c92-42ba-b137-31b25e0f0fa4" absoluteBounds="4.75, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/SistemKullanici" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac51ebbb-69e3-4ad4-888c-d39a02d32f99" absoluteBounds="4.765, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93fa459c-9e79-4f17-a603-ade744da14b4" absoluteBounds="2.75, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/EtiketNoSayac" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c907a0fe-69f4-471a-aa37-8c89bc00d942" absoluteBounds="2.765, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" absoluteBounds="8.75, 1.75, 2, 13.5012841796875">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Tanklar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c30d1842-cb60-45fa-8671-f865dcd146f2" absoluteBounds="8.765, 2.21, 1.9700000000000002, 12.9412841796875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.96875 : 15.2512841796875); (9.96875 : 23.03125); (10.0416666666667 : 23.03125 : JumpStart); (10.2083333333333 : 23.03125 : JumpEnd); (10.7916666666667 : 23.03125 : JumpStart); (10.9583333333333 : 23.03125 : JumpEnd); (11.4166666666667 : 23.03125 : JumpStart); (11.5833333333333 : 23.03125 : JumpEnd); (12.5416666666667 : 23.03125 : JumpStart); (12.7083333333333 : 23.03125 : JumpEnd); (13.875 : 23.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Tanklar/Tanklar_TankPompalari" />
+      <nodes>
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+        <classShapeMoniker Id="69ae81ed-58e8-461a-94cd-304f24d9cdf1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.1093775 : 15.2512841796875); (10.1093775 : 19.8085034179688); (10.7916666666667 : 19.8085034179688 : JumpStart); (10.9583333333333 : 19.8085034179688 : JumpEnd); (12.5416666666667 : 19.8085034179688 : JumpStart); (12.7083333333333 : 19.8085034179688 : JumpEnd); (13 : 19.8085034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Tanklar/Tanklar_TankKriyojenikVanalari" />
+      <nodes>
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+        <classShapeMoniker Id="4233b983-0e96-4c01-8091-5889e9cf6363" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 14.9381420898438); (12.0104141666667 : 14.9381420898438 : JumpStart); (12.1770808333333 : 14.9381420898438 : JumpEnd); (12.5416666666667 : 14.9381420898438 : JumpStart); (12.7083333333333 : 14.9381420898438 : JumpEnd); (13.6666666666667 : 14.9381420898438 : JumpStart); (13.8333333333333 : 14.9381420898438 : JumpEnd); (14.875 : 14.9381420898438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Tanklar/Tanklar_TankMikserleri" />
+      <nodes>
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+        <classShapeMoniker Id="39929a05-4a43-4af5-8256-cd335a44f277" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.21 : 1.75); (9.21 : 1.5); (9.55615384615385 : 1.5); (9.55615384615385 : 1.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Tanklar/Tanklar_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 24.2929775268554); (10.0000025 : 24.2929775268554); (10.0000025 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/GazCinsi/GazCinsi_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 4.36099812825521); (7.29166666666667 : 4.36099812825521 : JumpStart); (7.77083333333333 : 4.36099812825521 : JumpEnd); (8.16666666666667 : 4.36099812825521 : JumpStart); (8.33333333333333 : 4.36099812825521 : JumpEnd); (8.75 : 4.36099812825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Imalatcilar/Imalatcilar_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="6a1283e6-5023-4dc6-8d74-0d73580e9c4f" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 20.6903209863282); (10.14063 : 20.6903209863282); (10.14063 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 21.4147204589844); (10.0234375 : 21.4147204589844); (10.0234375 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar1" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 20.5014079931641); (9.94010416666667 : 20.5014079931641 : JumpStart); (10.1497408333333 : 20.5014079931641 : JumpEnd); (10.164065 : 20.5014079931641); (10.164065 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar2" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 20.8792339794922); (10.0664075 : 20.8792339794922); (10.0664075 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar3" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 21.2414337158203); (10.0449225 : 21.2414337158203); (10.0449225 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar4" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 21.5880072021484); (10.0878925 : 21.5880072021484); (10.0878925 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar5" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 20.406951496582); (9.94010416666667 : 20.406951496582 : JumpStart); (10.1067708333333 : 20.406951496582 : JumpEnd); (10.12500375 : 20.406951496582); (10.12500375 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar6" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 20.375); (8.75 : 19.4920068359375); (7.77083333333333 : 19.4920068359375 : JumpStart); (7.60416666666667 : 19.4920068359375 : JumpEnd); (7.58333333333333 : 19.4920068359375 : JumpStart); (7.29166666666667 : 19.4920068359375 : JumpEnd); (7.25 : 19.4920068359375); (7.25 : 7.07974812825521); (7.41666666666667 : 7.07974812825521 : JumpStart); (7.77083333333333 : 7.07974812825521 : JumpEnd); (8.75 : 7.07974812825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar7" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.281252 : 20.375); (9.281252 : 19.7420068359375); (9.09895933333333 : 19.7420068359375 : JumpStart); (8.93229266666667 : 19.7420068359375 : JumpEnd); (8.83333333333333 : 19.7420068359375 : JumpStart); (8.66666666666667 : 19.7420068359375 : JumpEnd); (8.56770733333333 : 19.7420068359375 : JumpStart); (8.40104066666667 : 19.7420068359375 : JumpEnd); (8.30208133333333 : 19.7420068359375 : JumpStart); (8.13541466666667 : 19.7420068359375 : JumpEnd); (7.625 : 19.7420068359375); (7.625 : 8.2898765641276); (8.75 : 8.2898765641276)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar8" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.218748 : 20.375); (8.218748 : 19.6170068359375); (7.125 : 19.6170068359375); (7.125 : 5.86961969238281); (7.17204697428386 : 5.86961969238281 : JumpStart); (7.33871364095052 : 5.86961969238281 : JumpEnd); (7.47916666666667 : 5.86961969238281 : JumpStart); (7.64583333333333 : 5.86961969238281 : JumpEnd); (8.75 : 5.86961969238281)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar9" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.015626 : 20.375); (9.015626 : 19.3670068359375); (7.5625 : 19.3670068359375); (7.5625 : 3.53109364485677); (8.75 : 3.53109364485677)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar10" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.546878 : 20.375); (9.546878 : 19.8670068359375); (9.09895933333333 : 19.8670068359375 : JumpStart); (8.93229266666667 : 19.8670068359375 : JumpEnd); (8.56770733333333 : 19.8670068359375 : JumpStart); (8.40104066666667 : 19.8670068359375 : JumpEnd); (8.30208133333333 : 19.8670068359375 : JumpStart); (8.13541466666667 : 19.8670068359375 : JumpEnd); (7.77083333333333 : 19.8670068359375 : JumpStart); (7.60416666666667 : 19.8670068359375 : JumpEnd); (7.58333333333333 : 19.8670068359375 : JumpStart); (7.41666666666667 : 19.8670068359375 : JumpEnd); (7.375 : 19.8670068359375); (7.375 : 8.8949407820638); (7.41666666666667 : 8.8949407820638 : JumpStart); (7.77083333333333 : 8.8949407820638 : JumpEnd); (8.75 : 8.8949407820638)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar11" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.75 : 21.0681469726563); (7.5 : 21.0681469726563); (7.5 : 15.7512841796875); (9.328123 : 15.7512841796875); (9.328123 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar12" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.484374 : 20.375); (8.484374 : 19.5545068359375); (7.4375 : 19.5545068359375); (7.4375 : 7.68481234619141); (8.75 : 7.68481234619141)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar13" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.75 : 20.6903214863281); (7.6875 : 20.6903214863281); (7.6875 : 16.0012841796875); (9.94010416666667 : 16.0012841796875 : JumpStart); (10.2239633333333 : 16.0012841796875 : JumpEnd); (10.4882845 : 16.0012841796875); (10.4882845 : 15.2512841796875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Markalar/Markalar_Tanklar14" />
+      <nodes>
+        <classShapeMoniker Id="56c33bd3-d708-4159-9863-a77eecbbc50d" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 13.2556469726562); (7.35416666666667 : 13.2556469726562 : JumpStart); (7.52083333333333 : 13.2556469726562 : JumpEnd); (8.75 : 13.2556469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Musteriler/Musteriler_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="863bb5be-f74b-4dc1-ae6c-36435e10a6b6" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 11.0829943847656); (7.04166666666667 : 11.0829943847656 : JumpStart); (7.64583333333333 : 11.0829943847656 : JumpEnd); (8.75 : 11.0829943847656)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/MusteriTahsisNitelikleri/MusteriTahsisNitelikleri_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="2bf32d83-6656-4ff7-8f88-28234b544d75" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 14.4142976888021); (11.5 : 14.4142976888021); (11.5 : 11.7748043494591); (11.3333333333333 : 11.7748043494591 : JumpStart); (11.1666666666667 : 11.7748043494591 : JumpEnd); (10.75 : 11.7748043494591)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Subeler/Subeler_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="f85b8572-f235-4ce3-99a0-b9090581d9e8" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 12.1931469726562); (11.25 : 12.1931469726562); (11.25 : 8.50064208984375); (11.0833333333333 : 8.50064208984375 : JumpStart); (10.9166666666667 : 8.50064208984375 : JumpEnd); (10.75 : 8.50064208984375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/TankHacimleri/TankHacimleri_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="b3c56370-8eb9-4d5b-92e1-6acb28c18c66" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.90230769230769 : 1.75); (9.90230769230769 : 1.5); (10.2484615384615 : 1.5); (10.2484615384615 : 1.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Tanklar/Tanklar_Tanklar1" />
+      <nodes>
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 10.0969962565104); (11 : 10.0969962565104); (11 : 5.22647983022837); (10.75 : 5.22647983022837)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Telemetreler/Telemetreler_Tanklar" />
+      <nodes>
+        <classShapeMoniker Id="d02e347b-eadb-4ea3-89e8-cd0445181afb" />
+        <classShapeMoniker Id="ba863076-1e05-4b89-bdb8-99bbaa012dab" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" absoluteBounds="11.625, 1, 2, 6.7707340494791657">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/Evaporatorler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ae7f134-1a1f-43d0-b2e1-7447785e1573" absoluteBounds="11.64, 1.46, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 2.76369416145833); (7.29166666666667 : 2.76369416145833 : JumpStart); (7.58333333333333 : 2.76369416145833 : JumpEnd); (7.60416666666667 : 2.76369416145833 : JumpStart); (7.77083333333333 : 2.76369416145833 : JumpEnd); (8.16666666666667 : 2.76369416145833 : JumpStart); (8.33333333333333 : 2.76369416145833 : JumpEnd); (8.5 : 2.76369416145833); (8.5 : 0.75); (11.2916666666667 : 0.749999999999999 : JumpStart); (11.4583333333333 : 0.75 : JumpEnd); (12.625 : 0.75); (12.625 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/EvaporatorKapasiteleri/EvaporatorKapasiteleri_Evaporatorler" />
+      <nodes>
+        <classShapeMoniker Id="64995e96-1b50-4003-962e-f51640e0f96d" />
+        <classShapeMoniker Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 6.125); (7.375 : 5.75); (7.375 : 0.625); (11.25 : 0.625); (11.625 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/EvaporatorTipleri/EvaporatorTipleri_Evaporatorler" />
+      <nodes>
+        <classShapeMoniker Id="1fbca12c-cbbd-4792-ae1e-248606e3b7f7" />
+        <classShapeMoniker Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.75 : 25.5964134586589); (11.4166666666667 : 25.5964134586589 : JumpStart); (11.5833333333333 : 25.5964134586589 : JumpEnd); (12.625 : 25.5964134586589); (12.625 : 7.77073404947917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/GazCinsi/GazCinsi_Evaporatorler" />
+      <nodes>
+        <classShapeMoniker Id="f690010c-2b37-4360-9545-50faa844a570" />
+        <classShapeMoniker Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 4.72199625651042); (7.29166666666667 : 4.72199625651042 : JumpStart); (7.45833333333333 : 4.72199625651042 : JumpEnd); (7.47916666666667 : 4.72199625651042 : JumpStart); (7.64583333333333 : 4.72199625651042 : JumpEnd); (8.25 : 4.72199625651042); (8.25 : 0.875); (11.4166666666667 : 0.874999999999999 : JumpStart); (11.5833333333333 : 0.875 : JumpEnd); (13.156252 : 0.875); (13.156252 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Imalatcilar/Imalatcilar_Evaporatorler" />
+      <nodes>
+        <classShapeMoniker Id="6a1283e6-5023-4dc6-8d74-0d73580e9c4f" />
+        <classShapeMoniker Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 15.4076969401042); (7.35416666666667 : 15.4076969401042 : JumpStart); (7.64583333333333 : 15.4076969401042 : JumpEnd); (8.13541716666667 : 15.4076969401042 : JumpStart); (8.30208383333333 : 15.4076969401042 : JumpEnd); (9.96158916666667 : 15.4076969401042 : JumpStart); (10.2239633333333 : 15.4076969401042 : JumpEnd); (12.0937475 : 15.4076969401042); (12.0937475 : 7.77073404947917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Musteriler/Musteriler_Evaporatorler" />
+      <nodes>
+        <classShapeMoniker Id="863bb5be-f74b-4dc1-ae6c-36435e10a6b6" />
+        <classShapeMoniker Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 10.7219962565104); (7.04166666666667 : 10.7219962565104 : JumpStart); (7.20833333333333 : 10.7219962565104 : JumpEnd); (7.35416666666667 : 10.7219962565104 : JumpStart); (7.64583333333333 : 10.7219962565104 : JumpEnd); (7.6875 : 10.7219962565104); (7.6875 : 1.375); (8.16666666666667 : 1.375 : JumpStart); (8.33333333333333 : 1.375 : JumpEnd); (11.5 : 1.375); (11.5 : 8.27073404947917); (12.0104141666667 : 8.27073404947917 : JumpStart); (12.1770808333333 : 8.27073404947917 : JumpEnd); (12.5416666666667 : 8.27073404947917 : JumpStart); (12.7083333333333 : 8.27073404947917 : JumpEnd); (13.156252 : 8.27073404947917); (13.156252 : 7.77073404947917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/MusteriTahsisNitelikleri/MusteriTahsisNitelikleri_Evaporatorler" />
+      <nodes>
+        <classShapeMoniker Id="2bf32d83-6656-4ff7-8f88-28234b544d75" />
+        <classShapeMoniker Id="cd6a23b9-02e6-422f-8943-a74b1805b4d5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c1bd8a5f-26a5-4aa2-9832-fd0360db677c" absoluteBounds="14.375, 8.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/StokHareketleri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5a37a68-b2a4-46dc-992c-aab5e787beb2" absoluteBounds="14.39, 9.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 15.5016097005208); (6 : 15.875); (7.04166666666667 : 15.875 : JumpStart); (7.70833333333333 : 15.875 : JumpEnd); (9.88541666666667 : 15.875 : JumpStart); (10.2473983333333 : 15.875 : JumpEnd); (10.4049511666667 : 15.875 : JumpStart); (10.5716178333333 : 15.875 : JumpEnd); (12.5416666666667 : 15.875 : JumpStart); (12.7083333333333 : 15.875 : JumpEnd); (14 : 15.875); (14 : 10.1162019856771); (14.375 : 10.1162019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Musteriler/Musteriler_StokHareketleri" />
+      <nodes>
+        <classShapeMoniker Id="863bb5be-f74b-4dc1-ae6c-36435e10a6b6" />
+        <classShapeMoniker Id="c1bd8a5f-26a5-4aa2-9832-fd0360db677c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 10.3922461282552); (7.04166666666667 : 10.3922461282552 : JumpStart); (7.20833333333333 : 10.3922461282552 : JumpEnd); (7.5 : 10.3922461282552); (7.5 : 1.25); (8.16666666666667 : 1.25 : JumpStart); (8.33333333333333 : 1.25 : JumpEnd); (11.375 : 1.25); (11.375 : 8.02073404947917); (11.4166666666667 : 8.02073404947917 : JumpStart); (11.5833333333333 : 8.02073404947917 : JumpEnd); (12.0104141666667 : 8.02073404947917 : JumpStart); (12.1770808333333 : 8.02073404947917 : JumpEnd); (12.5416666666667 : 8.02073404947917 : JumpStart); (12.7083333333333 : 8.02073404947917 : JumpEnd); (13.0729186666667 : 8.02073404947917 : JumpStart); (13.2395853333333 : 8.02073404947917 : JumpEnd); (15.375 : 8.02073404947917); (15.375 : 8.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/MusteriTahsisNitelikleri/MusteriTahsisNitelikleri_StokHareketleri" />
+      <nodes>
+        <classShapeMoniker Id="2bf32d83-6656-4ff7-8f88-28234b544d75" />
+        <classShapeMoniker Id="c1bd8a5f-26a5-4aa2-9832-fd0360db677c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.2187505 : 15.2035953776042); (8.2187505 : 15.5785953776042); (9.96158916666667 : 15.5785953776042 : JumpStart); (10.2239633333333 : 15.5785953776042 : JumpEnd); (12.5416666666667 : 15.5785953776042 : JumpStart); (12.7083333333333 : 15.5785953776042 : JumpEnd); (13.75 : 15.5785953776042); (13.75 : 10.8305549785156); (14.375 : 10.8305549785156)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TTSDataClassesDataContext/Subeler/Subeler_StokHareketleri" />
+      <nodes>
+        <classShapeMoniker Id="f85b8572-f235-4ce3-99a0-b9090581d9e8" />
+        <classShapeMoniker Id="c1bd8a5f-26a5-4aa2-9832-fd0360db677c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="317b15d2-3e57-41b7-bd0f-c6ec724299cd" absoluteBounds="17.25, 0.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/TTSDataClassesDataContext/V_StokRapor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4edc26ec-b4c3-4959-8541-18f6e31e6897" absoluteBounds="17.265, 1.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

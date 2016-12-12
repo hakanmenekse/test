@@ -1,0 +1,6 @@
+C:\innotek\github\habas\Projects\Bayi Barkod Sistemi\BBS\TTS.Data\bin\Release\TTS.Data.dll.config
+C:\innotek\github\habas\Projects\Bayi Barkod Sistemi\BBS\TTS.Data\bin\Release\TTS.Data.dll
+C:\innotek\github\habas\Projects\Bayi Barkod Sistemi\BBS\TTS.Data\bin\Release\TTS.Data.pdb
+C:\innotek\github\habas\Projects\Bayi Barkod Sistemi\BBS\TTS.Data\obj\Release\TTS.Data.csprojResolveAssemblyReference.cache
+C:\innotek\github\habas\Projects\Bayi Barkod Sistemi\BBS\TTS.Data\obj\Release\TTS.Data.dll
+C:\innotek\github\habas\Projects\Bayi Barkod Sistemi\BBS\TTS.Data\obj\Release\TTS.Data.pdb
