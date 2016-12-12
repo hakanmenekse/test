@@ -12,6 +12,7 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             // hakan 1
+            //frtbs
         }
 
         protected void LinqServerModeDataSource1_Selecting(object sender, DevExpress.Data.Linq.LinqServerModeDataSourceSelectEventArgs e)
