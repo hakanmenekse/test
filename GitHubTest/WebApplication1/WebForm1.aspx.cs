@@ -16,11 +16,11 @@ namespace WebApplication1
 
         protected void LinqServerModeDataSource1_Selecting(object sender, DevExpress.Data.Linq.LinqServerModeDataSourceSelectEventArgs e)
         {
-<<<<<<< HEAD
+
             // hakan_1 için branch testi
-=======
+
             //brach_1
->>>>>>> refs/remotes/origin/master
+
         }
 
         protected void ASPxGridView1_CellEditorInitialize(object sender, DevExpress.Web.ASPxGridViewEditorEventArgs e)
